@@ -13,8 +13,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://downloads.sourceforge.net/project/mpv-player-windows/64bit/mpv-x86_64-20221120-git-f10b24e.7z",
-            "hash": "sha1:3f2be956dd4f954c4e46909981dddc663912638e"
+            "url": "https://downloads.sourceforge.net/project/mpv-player-windows/64bit-v3/mpv-x86_64-v3-20221120-git-f10b24e.7z",
+            "hash": "md5:b3d86a44c7b720c58b1bff3182f2a1c5"
         },
         "32bit": {
             "url": "https://downloads.sourceforge.net/project/mpv-player-windows/32bit/mpv-i686-20221120-git-f10b24e.7z",
@@ -30,13 +30,13 @@
     ],
     "persist": "portable_config",
     "checkver": {
-        "url": "https://sourceforge.net/projects/mpv-player-windows/rss?path=/64bit",
-        "regex": "mpv-x86_64-(\\d+)-git-(?<commit>[\\da-f]+)\\.7z"
+        "url": "https://sourceforge.net/projects/mpv-player-windows/rss?path=/64bit-v3",
+        "regex": "mpv-x86_64-v3-(\\d+)-git-(?<commit>[\\da-f]+)\\.7z"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://downloads.sourceforge.net/project/mpv-player-windows/64bit/mpv-x86_64-$version-git-$matchCommit.7z"
+                "url": "https://downloads.sourceforge.net/project/mpv-player-windows/64bit-v3/mpv-x86_64-v3-$version-git-$matchCommit.7z"
             },
             "32bit": {
                 "url": "https://downloads.sourceforge.net/project/mpv-player-windows/32bit/mpv-i686-$version-git-$matchCommit.7z"
