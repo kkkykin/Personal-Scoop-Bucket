@@ -1,0 +1,43 @@
+{
+    "version": "4.3.0",
+    "description": "Versatile tool for programmers as well as for ordinary geeks.",
+    "homepage": "http://www.mitec.cz/infobar.html",
+    "license": "Royalty free",
+    "architecture": {
+        "64bit": {
+            "url": "http://www.mitec.cz/Downloads/InfoBar_Setup.exe",
+            "hash": "8a2406c28e5521c78d35cd1706b161c6db977d6d7c4f692bd07b67882c03d3fe"
+        }
+    },
+    "installer": {
+        "script": [
+            "if (!(is_admin)) { error \"$app requires admin rights to $cmd\"; break }",
+            "Start-Process \"$dir\\InfoBar_Setup.exe\" -ArgumentList @('/silent', \"/Dir=$dir\",'/CLOSEAPPLICATIONS') | Out-Null",
+            "Start-Sleep -Seconds 4",
+            "Remove-Item \"$([Environment]::GetFolderPath('commonstartmenu'))\\Programs\\MiTeC\" -Recurse",
+            "Stop-Process -Name 'infobar64' -erroraction 'silentlycontinue'",
+            "Remove-Item \"$dir\\InfoBar_Setup.exe\""
+        ]
+    },
+    "uninstaller": {
+        "script": [
+            "if (!(is_admin)) { error \"$app requires admin rights to $cmd\"; break }",
+            "Start-Process -Wait \"$dir\\unins000.exe\" -ArgumentList '/Silent' | Out-Null"
+        ]
+    },
+    "shortcuts": [
+        [
+            "InfoBar64.exe",
+            "InfoBar"
+        ]
+    ],
+    "checkver": {
+        "url": "http://www.mitec.cz/",
+        "regex": "MiTeC InfoBar ([\\d.]+)"
+    },
+    "autoupdate": {
+        "hash": {
+            "mode": "download"
+        }
+    }
+}

@@ -15,10 +15,6 @@
         "64bit": {
             "url": "https://downloads.sourceforge.net/project/mpv-player-windows/64bit-v3/mpv-x86_64-v3-20221120-git-f10b24e.7z",
             "hash": "md5:b3d86a44c7b720c58b1bff3182f2a1c5"
-        },
-        "32bit": {
-            "url": "https://downloads.sourceforge.net/project/mpv-player-windows/32bit/mpv-i686-20221120-git-f10b24e.7z",
-            "hash": "sha1:4c1fa0e1ac0564d4793d173a5f7082617624ae1c"
         }
     },
     "bin": "mpv.com",
@@ -37,9 +33,6 @@
         "architecture": {
             "64bit": {
                 "url": "https://downloads.sourceforge.net/project/mpv-player-windows/64bit-v3/mpv-x86_64-v3-$version-git-$matchCommit.7z"
-            },
-            "32bit": {
-                "url": "https://downloads.sourceforge.net/project/mpv-player-windows/32bit/mpv-i686-$version-git-$matchCommit.7z"
             }
         }
     }

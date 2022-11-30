@@ -1,0 +1,47 @@
+{
+    "description": "The leading toolkit for web security testing.",
+    "homepage": "https://portswigger.net/",
+    "version": "2022.11.2",
+    "architecture": {
+        "64bit": {
+            "url": "https://portswigger-cdn.net/burp/releases/download?product=pro&version=2022.11.2&type=WindowsX64",
+            "hash": "1f081840fc0cefef8a6ad863a6453bfc96b2aa2462a7138cb87742ad24f4cb18"
+        }
+    },
+    "installer": {
+        "script": [
+            "Move-Item \"$dir\\download\" \"$dir\\burp.exe\"",
+            "Start-Process -Wait \"$dir\\burp.exe\" -ArgumentList @('-q', \"-dir $dir\",'-overwrite') | Out-Null",
+            "Remove-Item \"$dir\\burp.exe\"",
+            "Remove-Item \"$([Environment]::GetFolderPath('startmenu'))\\Programs\\Burp Suite Professional\" -Recurse",
+            "New-Item -ItemType SymbolicLink -Path \"$dir\" -Name \"chrome.exe\" -Value \"$dir\\burpbrowser\\*\\chrome.exe\" | Out-Null"
+        ]
+    },
+    "uninstaller": {
+        "file": "uninstall.exe",
+        "args": "-q"
+    },
+    "persist" : "crack",
+    "shortcuts": [
+        [
+            "chrome.exe",
+            "chrome"
+        ]
+    ],
+    "checkver": {
+        "url": "https://portswigger.net/burp/releases/data?pageSize=2",
+        "jp": "ResultSet.Results[1].version"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://portswigger-cdn.net/burp/releases/download?product=pro&version=$match1&type=WindowsX64"
+            }
+        },
+        "hash": {
+            "mode": "json",
+            "url": "https://portswigger.net/burp/releases/data?pageSize=2",
+            "jp": "ResultSet.Results[1].builds[10].Sha256Checksum"
+        }
+    }
+}

@@ -1,0 +1,46 @@
+{
+    "version": "2.0.0.1100",
+    "description": "笔记整理交给我，一心只读圣贤书。",
+    "homepage": "http://www.bookxnote.com/",
+    "architecture": {
+        "64bit": {
+            "url": "http://www.bookxnote.com/setup/bookxnotepro-windows-x64-2.0.0.1100-20221116.zip",
+            "hash": "9ff2aed9b0ee55cacaf9ade11140039aaa28a4988adb2b897f7c7f1032608289"
+        }
+    },
+    "installer": {
+        "script": [
+            "if (!(is_admin)) { error \"$app requires admin rights to $cmd\"; break }",
+            "Start-Process -Wait \"$dir\\bookxnotepro-windows-x64*.exe\" -ArgumentList @('/S', \"/D=$dir\") | Out-Null",
+            "Remove-Item \"$([Environment]::GetFolderPath('startmenu'))\\Programs\\BookxNote Pro\" -Recurse",
+            "Remove-Item \"$([Environment]::GetFolderPath('Desktop'))\\BookxNote Pro.lnk\"",
+            "Remove-Item \"$dir\\bookxnotepro-windows-x64*.exe\""
+        ]
+    },
+    "uninstaller": {
+        "script": [
+            "if (!(is_admin)) { error \"$app requires admin rights to $cmd\"; break }",
+            "Start-Process -Wait \"$dir\\uninst.exe\" -ArgumentList '/S' | Out-Null"
+        ]
+    },
+    "shortcuts": [
+        [
+            "BookxNotePro.exe",
+            "BookxNote"
+        ]
+    ],
+    "checkver": {
+        "url": "http://www.bookxnote.com/",
+        "regex": "bookxnotepro-windows-x64-([\\d.]+)-(\\d+).zip"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "http://www.bookxnote.com/setup/bookxnotepro-windows-x64-$match1-$match2.zip"
+            }
+        },
+        "hash": {
+            "mode": "download"
+        }
+    }
+}
