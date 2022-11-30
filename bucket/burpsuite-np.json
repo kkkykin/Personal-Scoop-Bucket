@@ -1,11 +1,11 @@
 {
     "description": "The leading toolkit for web security testing.",
     "homepage": "https://portswigger.net/",
-    "version": "2022.11.2",
+    "version": "2022.12",
     "architecture": {
         "64bit": {
-            "url": "https://portswigger-cdn.net/burp/releases/download?product=pro&version=2022.11.2&type=WindowsX64",
-            "hash": "1f081840fc0cefef8a6ad863a6453bfc96b2aa2462a7138cb87742ad24f4cb18"
+            "url": "https://portswigger-cdn.net/burp/releases/download?product=pro&version=2.0.0.1100&type=WindowsX64",
+            "hash": "955985cab8231ee5ebf10766424ba23676a8451c7339158c8e5d87cac514fb11"
         }
     },
     "installer": {
@@ -21,7 +21,7 @@
         "file": "uninstall.exe",
         "args": "-q"
     },
-    "persist" : "crack",
+    "persist": "crack",
     "shortcuts": [
         [
             "chrome.exe",
