@@ -1,11 +1,11 @@
 {
     "description": "The leading toolkit for web security testing.",
     "homepage": "https://portswigger.net/",
-    "version": "2022.11.2",
+    "version": "2022.12.1",
     "architecture": {
         "64bit": {
-            "url": "https://portswigger-cdn.net/burp/releases/download?product=pro&version=2022.11.2&type=WindowsX64",
-            "hash": "1f081840fc0cefef8a6ad863a6453bfc96b2aa2462a7138cb87742ad24f4cb18"
+            "url": "https://portswigger-cdn.net/burp/releases/download?product=pro&version=2022.12.1&type=WindowsX64",
+            "hash": "bb53924dc9bf723ae893093cd3edbd35457db9c1791b2e387eeddd61d2e6615d"
         }
     },
     "installer": {
