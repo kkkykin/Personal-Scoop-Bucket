@@ -10,10 +10,10 @@
     },
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\")) {",
-        "   New-Item -Path \"$dir\" -Name \"config.yaml\" -ItemType \"File\" | Out-Null",
+        "   New-Item -Path \"$dir\" -Name \"xray.yaml\" -ItemType \"File\" | Out-Null",
         "}"
     ],
-    "persist": "config.yaml",
+    "persist": "xray.yaml",
     "bin": "xray.exe",
     "checkver": "github",
     "autoupdate": {
