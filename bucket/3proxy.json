@@ -19,7 +19,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/3proxy/3proxy/releases/download/v$version/3proxy-v$version-x64.zip"
+                "url": "https://github.com/3proxy/3proxy/releases/download/$version/3proxy-$version-x64.zip"
             }
         },
         "hash": {
