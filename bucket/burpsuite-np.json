@@ -2,6 +2,7 @@
     "description": "The leading toolkit for web security testing.",
     "homepage": "https://portswigger.net/",
     "version": "2022.11.3",
+    "notes": "需要自行注册并添加快捷方式",
     "architecture": {
         "64bit": {
             "url": "https://portswigger-cdn.net/burp/releases/download?product=pro&version=2022.11.3&type=WindowsX64",
