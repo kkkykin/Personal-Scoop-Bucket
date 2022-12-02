@@ -1,11 +1,11 @@
 {
     "description": "The leading toolkit for web security testing.",
     "homepage": "https://portswigger.net/",
-    "version": "2022.12.1",
+    "version": "2022.11.3",
     "architecture": {
         "64bit": {
-            "url": "https://portswigger-cdn.net/burp/releases/download?product=pro&version=2022.12.1&type=WindowsX64",
-            "hash": "bb53924dc9bf723ae893093cd3edbd35457db9c1791b2e387eeddd61d2e6615d"
+            "url": "https://portswigger-cdn.net/burp/releases/download?product=pro&version=2022.11.3&type=WindowsX64",
+            "hash": "md5:d7a95925298204e564ba458d3d52493a"
         }
     },
     "installer": {
@@ -30,7 +30,7 @@
     ],
     "checkver": {
         "url": "https://portswigger.net/burp/releases/data?pageSize=4",
-        "jp": "ResultSet.Results.[?(@.title =~ /Professional \\/ Community [\\d.]{8,}/)].version"
+        "jp": "ResultSet.Results.[?(@.releaseChannels[0] == 'Stable' && @.categories[0] == 'Professional')].version"
     },
     "autoupdate": {
         "architecture": {
@@ -41,7 +41,7 @@
         "hash": {
             "mode": "json",
             "url": "https://portswigger.net/burp/releases/data?pageSize=4",
-            "jp": "ResultSet.Results.[?(@.title =~ /Professional \\/ Community [\\d.]{8,}/)].builds[10].Sha256Checksum"
+            "jp": "ResultSet.Results.[?(@.releaseChannels[0] == 'Stable' && @.categories[0] == 'Professional')].builds.[?(@.ProductId == 'pro' && @.ProductPlatform == 'WindowsX64')].Md5Checksum"
         }
     }
 }
