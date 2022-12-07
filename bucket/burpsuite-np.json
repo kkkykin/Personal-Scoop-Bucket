@@ -1,12 +1,12 @@
 {
     "description": "The leading toolkit for web security testing.",
     "homepage": "https://portswigger.net/",
-    "version": "2022.11.3",
+    "version": "2022.11.4",
     "notes": "需要自行注册并添加快捷方式",
     "architecture": {
         "64bit": {
-            "url": "https://portswigger-cdn.net/burp/releases/download?product=pro&version=2022.11.3&type=WindowsX64",
-            "hash": "md5:d7a95925298204e564ba458d3d52493a"
+            "url": "https://portswigger-cdn.net/burp/releases/download?product=pro&version=2022.11.4&type=WindowsX64",
+            "hash": "1e5cc6042908c10c97b6d289c3a729cc5bfb5811a3c6eba2905f354574cfa282"
         }
     },
     "installer": {
@@ -31,7 +31,7 @@
     ],
     "checkver": {
         "url": "https://portswigger.net/burp/releases/data?pageSize=4",
-        "jp": "ResultSet.Results.[?(@.releaseChannels[0] == 'Stable' && @.categories[0] == 'Professional')].version"
+        "jp": "$.ResultSet.Results.[?(@.releaseChannels[0] == 'Stable' && @.categories[0] == 'Professional')].version"
     },
     "autoupdate": {
         "architecture": {
@@ -42,7 +42,7 @@
         "hash": {
             "mode": "json",
             "url": "https://portswigger.net/burp/releases/data?pageSize=4",
-            "jp": "ResultSet.Results.[?(@.releaseChannels[0] == 'Stable' && @.categories[0] == 'Professional')].builds.[?(@.ProductId == 'pro' && @.ProductPlatform == 'WindowsX64')].Md5Checksum"
+            "jp": "$.ResultSet.Results.[?(@.releaseChannels[0] == 'Stable' && @.categories[0] == 'Professional')].builds.[?(@.ProductId == 'pro' && @.ProductPlatform == 'WindowsX64')].Md5Checksum"
         }
     }
 }
