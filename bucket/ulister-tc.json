@@ -6,6 +6,7 @@
     "suggest":{
         "totalcmd": "extra/totalcommander"
     },
+    "depends": "extras/vcredist2013",
     "architecture": {
         "64bit": {
             "url": "http://wincmd.ru/files/wlx64_uLister_4.0.0.zip",

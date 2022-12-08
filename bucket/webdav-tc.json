@@ -1,6 +1,5 @@
 {
     "version": "3.2",
-    "notes": "记得康康 readme，有依赖要装",
     "description": "Access to Web servers (read+write) via the WebDAV protocol over HTTP and HTTPS, also known as Web Folders.",
     "homepage": "https://www.ghisler.com/plugins.htm",
     "suggest": {
