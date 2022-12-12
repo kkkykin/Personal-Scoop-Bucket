@@ -19,4 +19,4 @@ To make a new manifest contribution, please read the [Contributing Guide](https:
 
 ## Setting
 ### Scoop config aria2-options
-scoop config aria2-options --https-proxy='http://127.0.0.1:7773',--http-proxy='http://127.0.0.1:7773'
+`scoop config aria2-options --https-proxy='http://127.0.0.1:7773',--http-proxy='http://127.0.0.1:7773'`
