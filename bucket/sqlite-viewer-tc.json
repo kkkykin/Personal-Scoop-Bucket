@@ -2,6 +2,7 @@
     "version": "2.17",
     "description": "Simple plugin for TC for view SQLite3 database files.",
     "homepage": "https://totalcmd.net/plugring/sqliteviewer.html",
+    "license": "Freeware",
     "suggest": {
         "totalcmd": "extra/totalcommander"
     },
@@ -22,8 +23,7 @@
     ],
     "persist": "SQLiteViewer.ini",
     "checkver": {
-        "url": "https://totalcmd.net/plugring/sqliteviewer.html",
-        "regex": "<h1>SQLite Viewer ([\\d.]+)</h1>"
+        "re": "<h1>SQLite Viewer ([\\d.]+)</h1>"
     },
     "autoupdate": {
         "architecture": {

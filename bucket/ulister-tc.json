@@ -3,6 +3,7 @@
     "notes": "记得康康 readme，有依赖要装",
     "description": "uLister is a powerful document viewer which can open more than 500 file formats.",
     "homepage": "https://totalcmd.net/plugring/oilister.html",
+    "license": "Freeware",
     "suggest":{
         "totalcmd": "extra/totalcommander"
     },
@@ -15,8 +16,7 @@
     },
     "persist": "redist",
     "checkver": {
-        "url": "https://totalcmd.net/plugring/oilister.html",
-        "regex": "<h1>uLister ([\\d.]+)</h1>"
+        "re": "<h1>uLister ([\\d.]+)</h1>"
     },
     "autoupdate": {
         "architecture": {

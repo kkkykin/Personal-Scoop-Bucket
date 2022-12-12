@@ -3,6 +3,7 @@
     "notes": "记得康康 readme",
     "description": "Packer plug-in based on 7z.dll and 7zG.exe for Total Commander.",
     "homepage": "http://totalcmd.net/plugring/total7zip.html",
+    "license": "Freeware",
     "suggest": {
         "totalcmd": "extra/totalcommander"
     },

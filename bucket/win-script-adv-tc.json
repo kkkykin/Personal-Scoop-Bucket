@@ -2,6 +2,7 @@
     "version": "1.7",
     "description": "WinScriptAdv content plugin runs your scripts for files and folders and displays returned from script info into columns.",
     "homepage": "https://totalcmd.net/plugring/WinScriptAdv.html",
+    "license": "Freeware",
     "suggest": {
         "totalcmd": "extra/totalcommander"
     },

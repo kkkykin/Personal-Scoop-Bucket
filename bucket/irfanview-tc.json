@@ -3,6 +3,7 @@
     "notes": "记得康康 Readme",
     "description": "Plugin for viewing images in Total Commander.",
     "homepage": "https://totalcmd.net/plugring/TCIrfanView.html",
+    "license": "Freeware",
     "suggest": {
         "totalcmd": "extra/totalcommander"
     },
@@ -19,8 +20,7 @@
     ],
     "persist": "irfanview.ini",
     "checkver": {
-        "url": "https://totalcmd.net/plugring/TCIrfanView.html",
-        "regex": "<h1>TC IrfanView Plugin ([\\d.]+)</h1>"
+        "re": "<h1>TC IrfanView Plugin ([\\d.]+)</h1>"
     },
     "autoupdate": {
         "architecture": {

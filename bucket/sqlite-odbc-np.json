@@ -3,7 +3,7 @@
     "description": "SQLite ODBC Driver",
     "homepage": "http://www.ch-werner.de/sqliteodbc/",
     "license": {
-        "identifier": "BSD-type",
+        "identifier": "Unknown",
         "url": "http://www.ch-werner.de/sqliteodbc/license.terms"
     },
     "architecture": {
@@ -28,8 +28,7 @@
         ]
     },
     "checkver": {
-        "url": "http://www.ch-werner.de/sqliteodbc/",
-        "regex": "sqliteodbc-([\\d.]+)\\.tar.gz"
+        "re": "sqliteodbc-([\\d.]+)\\.tar.gz"
     },
     "autoupdate": {
         "hash": {

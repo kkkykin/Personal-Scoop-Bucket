@@ -2,6 +2,7 @@
     "version": "1.0.2",
     "description": "View Access (*.mdb, *.accdb), Excel (*.xls, *.xlsx, *.xlsb) and Data Source (*.dsn) files through ODBC interface.",
     "homepage": "http://totalcmd.net/plugring/odbc-wlx.html",
+    "license": "Freeware",
     "suggest": {
         "totalcmd": "extra/totalcommander"
     },

@@ -2,6 +2,7 @@
     "version": "3.2",
     "description": "Access to Web servers (read+write) via the WebDAV protocol over HTTP and HTTPS, also known as Web Folders.",
     "homepage": "https://www.ghisler.com/plugins.htm",
+    "license": "Unknown",
     "suggest": {
         "totalcmd": "extra/totalcommander"
     },
