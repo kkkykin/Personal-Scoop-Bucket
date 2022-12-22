@@ -11,17 +11,9 @@
     },
     "installer": {
         "script": [
-            "if (!(is_admin)) { error \"$app requires admin rights to $cmd\"; break }",
-            "Start-Process -Wait \"$dir\\bookxnotepro-windows-x64*.exe\" -ArgumentList @('/S', \"/D=$dir\") | Out-Null",
-            "Remove-Item \"$([Environment]::GetFolderPath('startmenu'))\\Programs\\BookxNote Pro\" -Recurse",
-            "Remove-Item \"$([Environment]::GetFolderPath('Desktop'))\\BookxNote Pro.lnk\"",
-            "Remove-Item \"$dir\\bookxnotepro-windows-x64*.exe\""
-        ]
-    },
-    "uninstaller": {
-        "script": [
-            "if (!(is_admin)) { error \"$app requires admin rights to $cmd\"; break }",
-            "Start-Process -Wait \"$dir\\uninst.exe\" -ArgumentList '/S' | Out-Null"
+            "Move-Item \"$dir\\bookxnotepro-windows-x64*.exe\" \"$dir\\bookxnote.7z\"",
+            "Expand-7zipArchive \"$dir\\bookxnote.7z\" \"$dir\" -Removal",
+            "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\uninst.exe.nsis\" -Recurse"
         ]
     },
     "shortcuts": [
