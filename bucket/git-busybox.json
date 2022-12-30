@@ -26,8 +26,18 @@
         "mingw64\\bin\\busybox.exe",
         [
             "mingw64\\bin\\busybox.exe",
+            "basename",
+            "basename"
+        ],
+        [
+            "mingw64\\bin\\busybox.exe",
             "sed",
             "sed"
+        ],
+        [
+            "mingw64\\bin\\busybox.exe",
+            "uname",
+            "uname"
         ]
     ],
     "env_set": {
