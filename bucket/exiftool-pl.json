@@ -1,5 +1,5 @@
 {
-    "version": "12.52",
+    "version": "12.53",
     "notes": "手动去 shims 改一下 perl 路径",
     "description": "Read, Write and Edit Meta Information!",
     "license": "Freeware",
@@ -7,8 +7,8 @@
     "suggest": {
         "perl": "main/perl"
     },
-    "url": "https://exiftool.org/Image-ExifTool-12.52.tar.gz",
-    "hash": "c87f119644d101a9c760dcaae558b9d96f2618a209c26199b16873ca8933f9aa",
+    "url": "https://exiftool.org/Image-ExifTool-12.53.tar.gz",
+    "hash": "b42e421cf34b4cc6cd30c01de43b1231df1242e115a4944af820c76dcfb3a008",
     "pre_install": "New-Item -Path \"$dir\" -Name exiftool.pl -type File | Out-Null",
     "post_install": [
         "Move-Item \"$dir\\Image-ExifTool-$version\\exiftool\" \"$dir\\exiftool.pl\" -Force",
