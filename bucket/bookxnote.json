@@ -1,12 +1,12 @@
 {
-    "version": "2.0.0.1101",
+    "version": "2.0.0.1102",
     "description": "笔记整理交给我，一心只读圣贤书。",
     "homepage": "http://www.bookxnote.com/",
     "license": "Proprietary",
     "architecture": {
         "64bit": {
-            "url": "http://www.bookxnote.com/setup/bookxnotepro-windows-x64-2.0.0.1101-20221220.zip",
-            "hash": "fa14fea8df919db6f3dc942a4a10d1be6164f8abfa0baecb671dd15b690da5dc"
+            "url": "http://www.bookxnote.com/setup/bookxnotepro-windows-x64-2.0.0.1102-20230111.zip",
+            "hash": "c3f21445ecaff57e5a89d6455e35de21e73191579fd8d84e75f7b98a61e2dc53"
         }
     },
     "installer": {
