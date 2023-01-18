@@ -1,6 +1,5 @@
 {
     "version": "12.55",
-    "notes": "手动去 shims 改一下 perl 路径",
     "description": "Read, Write and Edit Meta Information!",
     "license": "Freeware",
     "homepage": "https://exiftool.org/index.html",
@@ -8,19 +7,20 @@
         "perl": "main/perl"
     },
     "url": "https://exiftool.org/Image-ExifTool-12.55.tar.gz",
-    "hash": "08581bd7a1a760f20a1b43cb6d38927e6ec545d59906dae85c7df673946eea08",
-    "pre_install": "New-Item -Path \"$dir\" -Name exiftool.pl -type File | Out-Null",
-    "post_install": [
-        "Move-Item \"$dir\\Image-ExifTool-$version\\exiftool\" \"$dir\\exiftool.pl\" -Force",
-        "Move-Item \"$dir\\Image-ExifTool-$version\\lib\" \"$dir\"",
-        "Remove-Item \"$dir\\Image-ExifTool-$version\" -Recurse"
-    ],
-    "bin": "exiftool.pl",
+    "hash": "md5:82b7dd7616357b5687d83197b872d1b4",
+    "extract_dir": "Image-ExifTool-12.55",
+    "post_install": "(Get-Content $dir\\..\\..\\..\\shims\\exiftool.cmd) -replace 'C:.*bash\\.exe','perl' | Set-Content $dir\\..\\..\\..\\shims\\exiftool.cmd",
+    "bin": "exiftool",
     "checkver": {
-        "url": "https://exiftool.org/index.html",
-        "re": "Image-ExifTool-([\\d.]+)\\.tar\\.gz"
+        "url": "https://exiftool.org/ver.txt",
+        "re": "([\\d.]+)"
     },
     "autoupdate": {
-        "url": "https://exiftool.org/Image-ExifTool-$version.tar.gz"
+        "url": "https://exiftool.org/Image-ExifTool-$version.tar.gz",
+        "hash": {
+            "url": "$baseurl/checksums.txt",
+            "regex": "MD5\\s*\\($basename\\)\\s*=\\s*$md5"
+        },
+        "extract_dir": "Image-ExifTool-$version"
     }
 }
