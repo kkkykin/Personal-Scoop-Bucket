@@ -1,10 +1,10 @@
 {
-    "version": "0.12.26",
+    "version": "0.12.27",
     "description": "Tree-sitter Language Bundle for Emacs",
     "homepage": "https://github.com/kiennq/treesit-langs",
     "license": "MIT",
-    "url": "https://github.com/kiennq/treesit-langs/releases/download/0.12.26/tree-sitter-grammars.x86_64-pc-windows-msvc.v0.12.26.tar.gz",
-    "hash": "aa02f5005ef6c4704403e09310262214f6de4700946e82f3accf2f512faf3bc6",
+    "url": "https://github.com/kiennq/treesit-langs/releases/download/0.12.27/tree-sitter-grammars.x86_64-pc-windows-msvc.v0.12.27.tar.gz",
+    "hash": "92eb95b94cf517ed043477c2fd524dad022b0472df5a650ca2133ad238145a23",
     "checkver": {
         "url": "https://api.github.com/repos/kiennq/treesit-langs/releases",
         "jp": "[0].tag_name"
