@@ -1,12 +1,12 @@
 {
-    "version": "5.2.1",
+    "version": "5.2.2",
     "description": "You can operate Windows with key bindings like Vim.",
     "homepage": "https://github.com/pit-ray/win-vind",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/pit-ray/win-vind/releases/download/v5.2.1/win-vind_5.2.1_64bit_portable.zip",
-            "hash": "c1414291191571f7958a6048ec0fa07190f60e7658a4e2d79a89800a224a7e8b"
+            "url": "https://github.com/pit-ray/win-vind/releases/download/v5.2.2/win-vind_5.2.2_64bit_portable.zip",
+            "hash": "b6c2b6c76636bfd9adc5b200e0c567eec508aec945d44c7aed7fbd086b121679"
         }
     },
     "pre_install": [
