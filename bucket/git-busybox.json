@@ -31,6 +31,11 @@
     ],
     [
       "mingw64\\bin\\busybox.exe",
+      "cp",
+      "cp"
+    ],
+    [
+      "mingw64\\bin\\busybox.exe",
       "diff",
       "diff"
     ],
@@ -38,6 +43,11 @@
       "mingw64\\bin\\busybox.exe",
       "grep",
       "grep"
+    ],
+    [
+      "mingw64\\bin\\busybox.exe",
+      "mv",
+      "mv"
     ],
     [
       "mingw64\\bin\\busybox.exe",
