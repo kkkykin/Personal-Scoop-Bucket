@@ -10,7 +10,7 @@
         }
     },
     "shortcut": "Wabbajack.exe",
-    "bin": "wabbajack-cli.exe",
+    "bin": "cli/wabbajack-cli.exe",
     "checkver": "github",
     "autoupdate": {
         "architecture": {
