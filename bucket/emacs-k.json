@@ -24,6 +24,7 @@
             "-c -n -a \"\""
         ]
     ],
+    "persist": "usr\\bin",
     "checkver": {
         "github": "https://github.com/kiennq/emacs-build",
         "re": "/tag/v([\\d\\w.-]+)"
