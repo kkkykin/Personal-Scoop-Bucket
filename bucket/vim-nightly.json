@@ -35,6 +35,11 @@
         ],
         [
             "vim.exe",
+            "cvi",
+            "--servername gvim --remote"
+        ],
+        [
+            "vim.exe",
             "ex",
             "-e"
         ],
