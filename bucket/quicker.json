@@ -1,10 +1,10 @@
 {
-    "version": "1.42.24.0",
+    "version": "1.43.29.0",
     "description": "您的指尖工具箱",
     "homepage": "https://getquicker.net/",
     "license": "Proprietary",
-    "url": "https://files.getquicker.net/_productfiles/202403/Quicker.x64.1.42.24.0.msi",
-    "hash": "509bb5f82d63d6ad6ba7ca79f5be5bbeb94d92bac718629e219f17faa57a14a4",
+    "url": "https://files.getquicker.net/_productfiles/202409/Quicker.x64.1.43.29.0.msi",
+    "hash": "ce849f132f0bcf64911bf58e14b434a2957d101bc3101bfdc604e6391004d142",
     "extract_dir": "Quicker",
     "shortcuts": [
         [
