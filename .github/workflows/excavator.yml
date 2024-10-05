@@ -1,4 +1,6 @@
 on:
+  repository_dispatch:
+    types: [trigger-workflow]
   workflow_dispatch:
   schedule:
     # run every 4 hours
