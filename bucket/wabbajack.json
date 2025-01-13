@@ -1,12 +1,12 @@
 {
-    "version": "3.7.5.1",
+    "version": "3.7.5.2",
     "description": "An automated Modlist installer for various games.",
     "homepage": "https://github.com/wabbajack-tools/wabbajack",
     "license": "GPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/wabbajack-tools/wabbajack/releases/download/3.7.5.1/3.7.5.1.zip",
-            "hash": "f7617a81ab11088a2ed88f9f6cfc1ebb1e5d7d6cc1d28c6c10f484d73d612933"
+            "url": "https://github.com/wabbajack-tools/wabbajack/releases/download/3.7.5.2/3.7.5.2.zip",
+            "hash": "e73088ffabb38976077bc579eac41e57e7799009efb8068ff1150b49f516e589"
         }
     },
     "shortcut": "Wabbajack.exe",
