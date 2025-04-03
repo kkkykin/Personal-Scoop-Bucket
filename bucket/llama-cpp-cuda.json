@@ -1,5 +1,5 @@
 {
-    "version": "5033",
+    "version": "5035",
     "description": "LLM inference in C/C++",
     "homepage": "https://github.com/ggerganov/llama.cpp",
     "license": "MIT",
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/ggerganov/llama.cpp/releases/download/b5033/llama-b5033-bin-win-cuda-cu12.4-x64.zip",
-            "hash": "0096304743c94b8d1c8d0ba4181e2253a9d08507deca6df1aeb5e3cf53041636"
+            "url": "https://github.com/ggerganov/llama.cpp/releases/download/b5035/llama-b5035-bin-win-cuda-cu12.4-x64.zip",
+            "hash": "38db7a526ae134aa117634d4b2908fc7530b26590b9ae8558631ffa6eb26bfc4"
         }
     },
     "bin": [
