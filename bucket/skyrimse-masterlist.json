@@ -1,10 +1,10 @@
 {
-    "version": "0.2025.03.23",
+    "version": "0.2025.04.04",
     "description": "LOOT masterlist for TES V: Skyrim Special Edition",
     "homepage": "https://github.com/loot/skyrimse",
     "license": "CC0-1.0",
-    "url": "https://raw.githubusercontent.com/loot/skyrimse/3d1a3c9454df13dd0e43e614d9e4ec44e06e2667/masterlist.yaml",
-    "hash": "4cb23c11d0a4af07db5cef03ea80144a66064239698f1088abf2a56425428798",
+    "url": "https://raw.githubusercontent.com/loot/skyrimse/e1fd1ff52e20ddb7fd9515f9f4fba06201edca8c/masterlist.yaml",
+    "hash": "c8b625acc180891fe94f5aa1018e1511e90c91464e0fe411beaf70ea735a433c",
     "checkver": {
         "url": "https://github.com/loot/skyrimse/commits/v0.21/masterlist.yaml.atom",
         "regex": "(?s)>(\\d+)-(\\d+)-(\\d+)T.*?/(?<sha>[0-9a-f]{40})",
