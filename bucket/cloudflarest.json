@@ -2,9 +2,9 @@
     "$schema": "https://raw.githubusercontent.com/ScoopInstaller/Scoop/master/schema.json",
     "homepage": "https://github.com/XIU2/CloudflareSpeedTest",
     "license": "GPLv3",
-    "version": "2.2.5",
-    "url": "https://github.com/XIU2/CloudflareSpeedTest/releases/download/v2.2.5/CloudflareST_windows_amd64.zip",
-    "hash": "6b40691bda8af67a46cc4d67527b561ee307e37b0da86af150a0d8f8d18a98f2",
+    "version": "2.3.0",
+    "url": "https://github.com/XIU2/CloudflareSpeedTest/releases/download/v2.3.0/CloudflareST_windows_amd64.zip",
+    "hash": "4a5020bac259ebd2182976ffc52e7129c48962289828eb4f3caa93f7e4dd3a26",
     "installer": {
         "script": [
             "if (!(Test-Path \"$persist_dir\\result.csv\")) {",
