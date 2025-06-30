@@ -1,6 +1,4 @@
 on:
-  repository_dispatch:
-    types: [trigger-workflow]
   workflow_dispatch:
   schedule:
     # run every 4 hours
@@ -13,8 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@main
       - name: Excavate
-        uses: kkkykin/ScoopActions@init-by-repo-dispatch
+        uses: ScoopInstaller/GithubActions@main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          SCOOP_GH_TOKEN: ${{ secrets.VISIT_BUILD_REPO }}
           SKIP_UPDATED: 1
