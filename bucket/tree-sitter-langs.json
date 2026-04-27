@@ -1,10 +1,10 @@
 {
-    "version": "0.13.46",
+    "version": "0.13.47",
     "description": "Tree-sitter Language Bundle for Emacs",
     "homepage": "https://github.com/emacs-tree-sitter/tree-sitter-langs",
     "license": "MIT",
-    "url": "https://github.com/emacs-tree-sitter/tree-sitter-langs/releases/download/0.13.46/tree-sitter-grammars.x86_64-pc-windows-msvc.v0.13.46.tar.gz",
-    "hash": "ff96e7594c2c584d9add5f359000d2fb2c98eb9efe9d3a2dc0546d7bd66870d9",
+    "url": "https://github.com/emacs-tree-sitter/tree-sitter-langs/releases/download/0.13.47/tree-sitter-grammars.x86_64-pc-windows-msvc.v0.13.47.tar.gz",
+    "hash": "7d06ba2ee5755da99dcec272b0f8936c71ee45f71d86936599e427d58f006b14",
     "post_install": "Get-ChildItem $dir\\*.dll | Rename-Item -NewName { 'libtree-sitter-' + $_.Name }",
     "checkver": "github",
     "autoupdate": {
