@@ -2,12 +2,12 @@
     "description": "The leading toolkit for web security testing.",
     "homepage": "https://portswigger.net/",
     "license": "Proprietary",
-    "version": "2026.7.3",
+    "version": "2026.8",
     "notes": "需要自行注册",
     "architecture": {
         "64bit": {
-            "url": "https://portswigger-cdn.net/burp/releases/download?product=pro&version=2026.7.3&type=WindowsX64",
-            "hash": "d4cb31bad2875b361aa24548fabc09a23140148c9e739a2bbd3d45ef00c3c642"
+            "url": "https://portswigger-cdn.net/burp/releases/download?product=pro&version=2026.8&type=WindowsX64",
+            "hash": "5b8be64c824e6a7570893ae610cdd7951d6d3f0dbadeb1d79faa633c1a7e9c60"
         }
     },
     "installer": {
