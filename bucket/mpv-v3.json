@@ -1,6 +1,6 @@
 {
     "##": "https://github.com/ScoopInstaller/Extras/commits/master/bucket/mpv-git.json",
-    "version": "20260927",
+    "version": "20261004",
     "description": "Video player based on MPlayer/mplayer2 (builds by shinchiro)",
     "homepage": "https://mpv.io",
     "license": "LGPL-2.1-or-later,GPL-2.0-or-later",
@@ -14,8 +14,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://downloads.sourceforge.net/project/mpv-player-windows/64bit-v3/mpv-x86_64-v3-20260927-git-a1bf4b6559.7z",
-            "hash": "sha1:9b6597036b45cd0635d2a489be6a0284304d37eb"
+            "url": "https://downloads.sourceforge.net/project/mpv-player-windows/64bit-v3/mpv-x86_64-v3-20261004-git-413ff0b1cd.7z",
+            "hash": "sha1:ed33f498d63881b14117f7c17effa2a9c3fe607c"
         }
     },
     "bin": "mpv.com",
